@@ -1,4 +1,4 @@
-package Windows;
+package console;
 
 public class Welcome {
 
