@@ -4,7 +4,7 @@ import spiel.ablauf.Intro;
 
 /**
  * 
- * Die Start-Klasse
+ * Die Start-Klasse.
  *
  */
 public class Start {
