@@ -2,7 +2,11 @@ package spiel;
 import spiel.ablauf.CharakterAuswahl;
 import spiel.ablauf.Intro;
 
-
+/**
+ * 
+ * Die Start-Klasse
+ *
+ */
 public class Start {
 
 	
