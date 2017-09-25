@@ -26,7 +26,7 @@ public class Zeile {
     public Zeile() {
     	String os = System.getProperty( "os.name" );
     	
-    	if (os.equalsIgnoreCase("Windows")) {
+    	if (!os.equalsIgnoreCase("Linux")) {
     		topLineChar="=";
     	    middleLineChar="-";
     	    bottomLineChar="=";
