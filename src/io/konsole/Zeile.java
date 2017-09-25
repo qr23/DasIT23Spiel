@@ -3,18 +3,43 @@ package io.konsole;
 public class Zeile {
    
     private int width = 61;
-    private final String topLineChar="━";
-    private final String middleLineChar="─";
-    private final String bottomLineChar="━";
-    private final String leftChar="┃";
-    private final String rightChar="┃";
-    private final String topLeft="┏";
-    private final String topRight="┓";
-    private final String bottomLeft="┗";
-    private final String bottomRight="┛";
-    private final String leftCrossChar="┠";
-    private final String rightCrossChar="┨";
     
+    /* @ToDo CodePage/Encoding Windows/Linux */ 
+    //private final String topLineChar= Character.toString ((char) 193 );
+    //http://www.torsten-horn.de/techdocs/encoding.htm#Codepage-Konsolenausgabe
+    
+    // System.getProperty( "os.name" ) => Linux
+    
+    private String topLineChar="━";
+    private String middleLineChar="─";
+    private String bottomLineChar="━";
+    private String leftChar="┃";
+    private String rightChar="┃";
+    private String topLeft="┏";
+    private String topRight="┓";
+    private String bottomLeft="┗";
+    private String bottomRight="┛";
+    private String leftCrossChar="┠";
+    private String rightCrossChar="┨";
+    
+    
+    public Zeile() {
+    	String os = System.getProperty( "os.name" );
+    	
+    	if (os.equalsIgnoreCase("Windows")) {
+    		topLineChar="=";
+    	    middleLineChar="-";
+    	    bottomLineChar="=";
+    	    leftChar="|";
+    	    rightChar="|";
+    	    topLeft="#";
+    	    topRight="#";
+    	    bottomLeft="#";
+    	    bottomRight="#";
+    	    leftCrossChar="+";
+    	    rightCrossChar="+";
+    	}
+    }
     
     public void setWidth(int width){
         this.width = width;
