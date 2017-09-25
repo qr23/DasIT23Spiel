@@ -4,7 +4,7 @@ import spiel.ablauf.Intro;
 
 /**
  * 
- * Die Start-Klasse.
+ * Die Start-Klasse. Hier beginnt das Spiel.
  *
  */
 public class Start {
@@ -39,7 +39,12 @@ public class Start {
 			
 			// weitere Schritte ausführen ...
 			
+			// Temp. zum Verhindern einer Endlos-Schleife
+			Spiel.setStop();
+			
 		} while (Spiel.laeuft());
+		
+		System.out.println("Spiel wurde beendet.");
 
 	}
 
