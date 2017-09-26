@@ -48,8 +48,7 @@ public class Zeile {
     public void drawLeftText(String text){
         
         TextBlock textblock = new TextBlock(text, width);
-        
-           
+                   
         // 
         while (textblock.hasNextLine()) {
             
