@@ -1,4 +1,6 @@
 package spiel;
+import java.nio.charset.CharsetEncoder;
+
 import spiel.ablauf.CharakterAuswahl;
 import spiel.ablauf.Intro;
 
@@ -12,6 +14,8 @@ public class Start {
 	
 	public static void main(String[] args) {
 		
+				
+		//System.out.println("OS: " + System.getProperty( "os.name" ));
 		// Intro starten
 		Intro.run();
 		
