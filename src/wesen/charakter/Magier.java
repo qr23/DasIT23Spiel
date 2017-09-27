@@ -26,7 +26,7 @@ public class Magier extends Charakter{
 		
 	}
 	
-	public double heilen() {
+	public int heilen() {
 		return magAtk * 5 ;
 	}
 	
