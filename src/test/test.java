@@ -2,6 +2,7 @@ package test;
 
 import io.dialog.Dialog;
 import io.dialog.EingabeDialog;
+import spiel.dice;
 import spiel.dialog.KampfVorschauDialog;
 import wesen.Wesen;
 import wesen.charakter.Krieger;
@@ -20,16 +21,24 @@ public class test extends Wesen{
 		
 		
 		
-		KampfVorschauDialog kvd = new KampfVorschauDialog();
 		
-		kvd.run();
 		
-		/*System.out.println(k.getAngriff());
-		System.out.println(k.getName());
-		System.out.println("-------------------------");
+		//dice dice = new dice();
+		//System.out.println(dice.wuerfeln(1,4));
+		
+		
+		
+		
+		/*KampfVorschauDialog kvd = new KampfVorschauDialog();
+		
+		kvd.run();*/
+		
+		//System.out.println(k.getAngriff());
+		//System.out.println(k.getName());
+		//System.out.println("-------------------------");
 		System.out.println(m.getName());
 		System.out.println("Feuerball!!! " + m.feuerball()+ " Schaden zugefügt. ");
-		System.out.println("Heil mich um "+ m.heilen());*/
+		System.out.println("Heil mich um "+ m.heilen());
 		
 		//System.out.println(mt.getLebenspunkte());
 		

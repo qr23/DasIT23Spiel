@@ -1,5 +1,6 @@
 package wesen.charakter;
 
+import spiel.dice;
 import wesen.Charakter;
 
 public class Magier extends Charakter{
@@ -27,7 +28,8 @@ public class Magier extends Charakter{
 	}
 	
 	public int heilen() {
-		return magAtk * 5 ;
+		dice d = new dice();
+		return magAtk * dice.wuerfeln(1, 6) ;
 	}
 	
 	
