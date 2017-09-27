@@ -30,5 +30,9 @@ public class SystemInfos {
 	    pw2.println(        "Sonderzeichen (UTF8)	: " + sonderzeichen );
 	    pw2.flush();
 	    
+	    pw2 = new PrintWriter( new OutputStreamWriter( System.out, "Cp1252" ) );
+	    pw2.println(        "Sonderzeichen (Cp1252)	: " + sonderzeichen );
+	    pw2.flush();
+	    
 	}
 }
