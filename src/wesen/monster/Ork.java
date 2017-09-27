@@ -8,16 +8,13 @@ public class Ork extends Monster {
 		this.name = name;
 		level = 1;
 		erfahrung = 0;
-		lebenspunkte = 50;
+		lebenspunkte = 500;
 		magiepunkte = 0;
-		angriff =  25;
-		verteidigung = 10;
+		angriff =  200;
+		verteidigung = 100;
 		magAtk = 0;
 		magVert = 5;
 		
 	}
 			
-			
- 
-
 }
