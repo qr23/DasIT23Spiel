@@ -8,7 +8,8 @@ public class test {
 		// TODO Auto-generated method stub
 		
 		Krieger k = new Krieger("Die legende Hans");
-		
+
+		System.out.println(k.getLevel());
 		System.out.println(k.getAngriff());
 		System.out.println(k.getName());
 	}
