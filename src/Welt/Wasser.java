@@ -1,4 +1,4 @@
-package welt;
+package Welt;
 
 public class Wasser {
 	

@@ -1,9 +1,9 @@
-package welt;
+package Welt;
 
 public class Gebirge {
 
 	public int staerkeModifikator = 1;
 	
-	public int monsterChance = 0;
+	public int monsterChance = 25;
 	
 }
