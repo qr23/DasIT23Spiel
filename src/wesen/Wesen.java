@@ -67,5 +67,6 @@ public class Wesen {
 	public void setMag_Atk(int mag_Atk) {
 		this.magAtk = mag_Atk;
 	}
-
+	
+	
 }
