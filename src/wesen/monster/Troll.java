@@ -9,6 +9,8 @@ public class Troll extends Wesen{
 	
 	public Troll(String name){ // Konstructormethode
 		
+		// arscgloch
+		
 		// Bei jedem aufruf passieren soll
 		this.name = name;
 		this.setLebenspunkte(20);
