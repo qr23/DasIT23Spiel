@@ -7,14 +7,20 @@ public class Feld {
 	int posX;
 	int posY;
 	
-	boolean spieler;
-	boolean monster;
+	boolean hatSpieler;
+	boolean hatMonster;
 	
 	public FeldTyp = {};
 	
 	public Feld (int a, int b, bool p, bool m) {
 		
-		x = a;
+		posX = a;
+		posY = b;
+		
+		hatSpieler = p;
+		hatMonster = m;
+		
+		
 	}
 	
 
