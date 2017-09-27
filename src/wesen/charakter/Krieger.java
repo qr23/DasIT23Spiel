@@ -5,6 +5,7 @@ import wesen.Charakter;
 public class Krieger extends Charakter{
 	
 	public Krieger(String name) {
+		this.name = name;
 		level = 1;
 		erfahrung = 0;
 		lebenspunkte = 150;
