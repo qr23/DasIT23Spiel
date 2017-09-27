@@ -1,23 +1,16 @@
 package test;
 
-import io.dialog.EingabeDialog;
+import wesen.charakter.Krieger;
 
 public class test {
 
 	public static void main(String[] args) {
-		System.out.println("HW");
+		// TODO Auto-generated method stub
 		
-		EingabeDialog d = new EingabeDialog();
+		Krieger k = new Krieger("Die legende Hans");
 		
-		// Objekt = d
-		d.setTitel("Name");
-		d.setInhalt("Hallo, wie heiﬂt du?");
-		
-		String eingabe = d.run();
-		System.out.println("Hallo " + eingabe);
-		
-		
-
+		System.out.println(k.getAngriff());
+		System.out.println(k.getName());
 	}
 
 }
