@@ -12,7 +12,7 @@ public class Feld {
 	
 	public FeldTyp = {};
 	
-	public Feld (int a, int b, bool p, bool m) {
+	public Feld (int a, int b, boolean p, boolean m) {
 		
 		posX = a;
 		posY = b;
