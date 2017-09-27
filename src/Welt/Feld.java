@@ -4,22 +4,18 @@ package Welt;
 
 public class Feld {
 	
-	int posX;
-	int posY;
+	FeldTyp terrain;
 	
 	boolean hatSpieler;
 	boolean hatMonster;
 	
-	public FeldTyp = {};
+	public Feld (boolean p, boolean m, FeldTyp f) {
+		
 	
-	public Feld (int a, int b, bool p, bool m) {
-		
-		posX = a;
-		posY = b;
-		
 		hatSpieler = p;
 		hatMonster = m;
 		
+		terrain = f;
 		
 	}
 	
