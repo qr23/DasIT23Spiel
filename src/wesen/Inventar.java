@@ -31,7 +31,7 @@ public class Inventar {
 	 */
 	public void setMaxPlaetze(int maxPlaetze) {
 		this.maxPlaetze = maxPlaetze;
-		//inventarplatz = new Gegenstand[maxPlaetze];
+		inventarplatz = new Gegenstand[maxPlaetze];
 	}
 	
 	
