@@ -1,6 +1,5 @@
 package io.konsole;
 
-
 import java.util.ArrayList;
 
 /**
