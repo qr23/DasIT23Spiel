@@ -2,8 +2,5 @@
 bin/*
 bin/
 *.class
-<<<<<<< HEAD
-
-=======
 doc/
->>>>>>> f725d5d2abc905b0a8c432f6963e4f2c44847cfa
+
