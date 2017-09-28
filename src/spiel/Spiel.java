@@ -4,6 +4,7 @@ package spiel;
  * Vom Spiel soll es nur EINE Instanz geben. daher sind die Funktionen und 
  * Attribute statisch.
  * 
+ *
  * 
  */
 public class Spiel {

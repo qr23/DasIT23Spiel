@@ -1,23 +1,21 @@
 package test;
 
-import io.dialog.EingabeDialog;
+import wesen.Wesen;
+import wesen.charakter.Krieger;
+import wesen.monster.Ork;
 
-public class test {
+public class test extends Wesen{
 
 	public static void main(String[] args) {
-		System.out.println("HW");
 		
-		EingabeDialog d = new EingabeDialog();
+		Krieger k = new Krieger("Die legende Hans");	
+		Ork o = new Ork("Tom");
+		KmapfTest kampf = new KmapfTest();
 		
-		// Objekt = d
-		d.setTitel("Name");
-		d.setInhalt("Hallo, wie heiﬂt du?");
+		kampf.kaempfen(k, o);		
 		
-		String eingabe = d.run();
-		System.out.println("Hallo " + eingabe);
+		System.out.println(kampf.getSeiger());
 		
-		
-
 	}
 
 }
