@@ -1,8 +1,5 @@
 package test;
 
-import io.dialog.Dialog;
-import io.dialog.EingabeDialog;
-import spiel.dice;
 import wesen.Wesen;
 import wesen.charakter.Krieger;
 import wesen.monster.Ork;
