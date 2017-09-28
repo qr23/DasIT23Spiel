@@ -2,6 +2,15 @@ package wesen;
 
 import gegenstand.Gegenstand;
 
+
+/**
+ * 
+ * Ein Inventar für Monster, Charakter & Co. Hier kann 
+ * man Gegenstände transportieren.
+ * 
+ * Inventar = Rucksack
+ *
+ */
 public class Inventar {
 	
 	// Liste aller im Inventar gespeicherten Gegenstände
