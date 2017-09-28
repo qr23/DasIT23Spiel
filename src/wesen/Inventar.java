@@ -19,6 +19,9 @@ public class Inventar {
 	// Wieviele Gegenstände sind im Inventar?
 	// und: welches ist der nächste freie Platz.
 	int benutzt = 0;
+	
+	// Anzahl der möglichen bzw. verfügbaren Plätze 
+	// im Inventar.
 	int maxPlaetze;
 		
 		
