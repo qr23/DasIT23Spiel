@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Tastatur {
 	private static Scanner scanner = new Scanner(System.in);
-    
+
 	/**
 	 * Fragt die Tastatur ab. Wartet auf das Drücken der Enter-Taste.
 	 * 
