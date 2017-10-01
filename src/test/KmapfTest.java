@@ -1,6 +1,6 @@
 package test;
 
-import spiel.dice;
+import spiel.Dice;
 import wesen.Charakter;
 import wesen.Monster;
 import wesen.Wesen;
@@ -19,7 +19,7 @@ public class KmapfTest {
 			int w2atk = w2.getAngriff();
 			int w1ver = w1.getVerteidigung();
 			int w2ver = w2.getVerteidigung();
-			dice w = new dice();
+			Dice w = new Dice();
 			int w1z = w.wuerfeln(4, 20);
 			int w1sch = w1atk + w1z;
 			int w2z = w.wuerfeln(4, 20);

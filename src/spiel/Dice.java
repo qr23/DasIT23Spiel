@@ -2,7 +2,7 @@ package spiel;
 
 import java.util.Random;
 
-public class dice{
+public class Dice{
     public static int wuerfeln(int number, int nSides)
     { 
         int num = 0;

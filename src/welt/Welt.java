@@ -1,5 +1,4 @@
-package Welt;
-import Welt.Feld;
+package welt;
 
 public class Welt {
 	

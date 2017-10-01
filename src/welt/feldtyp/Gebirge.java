@@ -1,4 +1,4 @@
-package Welt;
+package welt.feldtyp;
 
 public class Gebirge {
 
