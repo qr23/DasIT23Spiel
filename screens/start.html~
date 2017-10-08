@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="de">
+
+  <head>
+    <title>DasIT23Spiel - Screens</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+  </head>
+
+  <body>
+    <div class="screen">
+      <div class="title">DasIT23Spiel - Intro</div>
+      <div class="body">
+	Herzlich Willkommen!
+      </div>
+      <div class="menu">
+	<a href="charakter-auswahl.html">JA</a>
+	<a href="start-abbruch.html">NEIN</a>
+      </div>
+    </div><!-- /screen -->
+  </body>
+</html>
