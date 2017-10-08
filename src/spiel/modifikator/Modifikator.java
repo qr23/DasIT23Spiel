@@ -1,6 +1,5 @@
 package spiel.modifikator;
 
-import spiel.Dice;
 import spiel.Wuerfel;
 
 /**
@@ -9,27 +8,33 @@ import spiel.Wuerfel;
  * Modifikatoren sind zum Beispiel bei einem Geländetyp, bei Waffen oder 
  * Ausrüstung zu finden.
  * 
+ * 	 Jeder Modifikator wird einem Ziel zugewiesen, das er verändern soll.
+ *   Das Ziel kann sein:
+ *   - Staerke
+ *   - Magie
+ *   - Angriff
+ *   - Verteidigung
+ *   - etc.
+ * 
  *   Ein Modifikator enthält die Werte:
  *   
- *   Von: Startwert
- *   Bis: Endwert
+ *   Von: Startwert 
+ *   Bis: Endwert 
  *   
  *   In diesem Rahmen können sich die Modifizierten Werte bewegen.
  *   Durch den Von-Bis-Bereich kann per Zufall ein konkreter Wert
  *   ermittelt werden. Damit ist ein Modifikator in gewissem Rahmen
- *   (von -> bis) variabel.   
+ *   (von -> bis) variabel.
+ *   
+ *   Wenn sich die Werte im Bereich 0 .. 100 bewegen, können die 
+ *   Werte als Prozentangabe interpretiert werden. 
  * 
  *
  */
 public class Modifikator {
 	
-	>>>>>
-	Ist ein Modifikator ein fester Wert (7 oder 12, oder 3)?
-	Oder geht das ganze Prozentual? (10%)
-	>>>>
-	
-	private float von = 0;
-	private float bis = 0;
+	private int von = 0;
+	private int bis = 0;
 	private String ziel="";
 	
 	/**
@@ -39,10 +44,20 @@ public class Modifikator {
 	 * @param von StartWert
 	 * @param bis StopWert
 	 */
-	public Modifikator(String ziel, float von, float bis) {
+	public Modifikator(String ziel, int von, int bis) {
 		this.von = von;
 		this.bis = bis;
 		this.ziel = ziel;
+	}
+	
+	/**
+	 * Prüft, ob ein gegebenes Ziel mit dem internen Ziel des Modifikators übereinstimmt.
+	 * 
+	 * @param ziel
+	 * @return true, wenn das Ziel übereinstimmt
+	 */
+	public boolean isZiel(String ziel) {
+		return this.ziel.equalsIgnoreCase(ziel);
 	}
 	
 	public String getZiel() {
@@ -62,12 +77,7 @@ public class Modifikator {
 	 * 
 	 * @return
 	 */
-	public int getWert() { 
-		>>>>>>>>
-		eigentlich werden INTs zum Würfeln gebraucht. 
-		aber eigentlich wäre es schön die Modifikatoren in Prozent (0.25) anzugeben
-		=> Staerke wird um 25% erhöht.
-		>>>>>>>>
+	public int getWert() { 	
 		return Wuerfel.werfen(von, bis);
 	}
 
