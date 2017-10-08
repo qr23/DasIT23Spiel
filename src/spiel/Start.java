@@ -1,6 +1,4 @@
 package spiel;
-import java.nio.charset.CharsetEncoder;
-
 import spiel.ablauf.CharakterAuswahl;
 import spiel.ablauf.Intro;
 
