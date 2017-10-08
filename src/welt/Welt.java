@@ -1,4 +1,5 @@
 package welt;
+import welt.Feld;
 
 public class Welt {
 	
