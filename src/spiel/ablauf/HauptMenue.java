@@ -12,7 +12,7 @@ public class HauptMenue {
 		
 		// Welche Aktion wird gewählt 		
 		auswahl = hauptMenueDialog.run();
-		
+		System.out.println("Auswahl: " + auswahl.getName());
 		if (auswahl.isName("Wandern")) {}
 		
 		if (auswahl.isName("Beenden")) { Spiel.setStop(); }

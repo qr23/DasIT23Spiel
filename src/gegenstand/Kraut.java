@@ -39,7 +39,7 @@ public class Kraut {
 	}
 
 	public void setStaerkepunkte(int staerkepunkte) {
-		this.staerkepunkte = staerkepunkte;
+		//this.staerkepunkte = staerkepunkte;
 	}
 
 	public String getName() {
