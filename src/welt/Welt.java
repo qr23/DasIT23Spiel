@@ -29,11 +29,7 @@ public class Welt {
 				// Erzeuge neuen FeldTyp - z.B. Wald 
 				// DoTo: per Zufall auswählen!
 				FeldTyp ftyp = new Wald();
-				
-				// Füge dem FeldTyp Modifikatoren zu.
-				ftyp.addModifikator("Bewegung", -5, -3);
-				ftyp.addModifikator("Verteidigung", 8, 10);
-				
+							
 				// Den FeldTyp an das Feld hängen
 				f.setFeldTyp(ftyp);
 				
