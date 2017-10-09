@@ -35,10 +35,14 @@ public class Welt {
 				
 				// Ein Monster erzeugen. z.B. Ork
 				// ToDo: per Zufall auswählen
+				// ToDo: Monster mit Wahrscheinlichkeit und in Abhängigkeit
+				// vom FeldTyp (Modifikator auslesen!)
 				Monster m = new Ork("Wurgtz");
 				
 				// Monster auf das Feld setzen.
 				f.setMonster(m);
+				
+				// Kraut erstellen
 							
 				// Feld mit allem DrumUndDran (FeldTyp + 
 				// Monster + Modifikatoren) auf die 
