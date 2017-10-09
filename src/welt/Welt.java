@@ -14,28 +14,43 @@ public class Welt {
 	
 	public Welt (int x, int y) {
 		
-		
+		// Initialisiere die Karte
 		karte = new Feld[x][y];
 		
+		// Durchlaufe alle Zeilen der Karte
 		for (int i=0; i<x; i++) {
 			
+			// Durchlaufe alle Spalten in der Zeile
 			for (int k=0; k<y; k++) {
+				
+				// Erzeugte neues Feld
 				Feld f = new Feld();
 				
+				// Erzeuge neuen FeldTyp - z.B. Wald 
+				// DoTo: per Zufall auswählen!
 				FeldTyp ftyp = new Wald();
+				
+				// Füge dem FeldTyp Modifikatoren zu.
 				ftyp.addModifikator("Bewegung", -5, -3);
 				ftyp.addModifikator("Verteidigung", 8, 10);
 				
+				// Den FeldTyp an das Feld hängen
 				f.setFeldTyp(ftyp);
 				
+				// Ein Monster erzeugen. z.B. Ork
+				// ToDo: per Zufall auswählen
 				Monster m = new Ork("Wurgtz");
+				
+				// Monster auf das Feld setzen.
 				f.setMonster(m);
 							
-				
+				// Feld mit allem DrumUndDran (FeldTyp + 
+				// Monster + Modifikatoren) auf die 
+				// Karte "kleben"
 				karte[i][k] = f;
-				
-			}
-		}
+			
+			} // nächste Spalte
+		} // nächste Zeile
 		
 	}
 	
