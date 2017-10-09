@@ -16,7 +16,7 @@ public class FeldTyp {
 		this.name = "None";
 	}
 	
-	protected void addModifikator(String ziel, int von, int bis) {
+	public void addModifikator(String ziel, int von, int bis) {
 		Modifikator m = new Modifikator(ziel, von, bis);
 		modListe.add(m);
 	}

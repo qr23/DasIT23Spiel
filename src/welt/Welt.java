@@ -1,5 +1,9 @@
 package welt;
 import welt.Feld;
+import welt.feldtyp.FeldTyp;
+import welt.feldtyp.Wald;
+import wesen.Monster;
+import wesen.monster.Ork;
 
 public class Welt {
 	
@@ -16,7 +20,20 @@ public class Welt {
 		for (int i=0; i<x; i++) {
 			
 			for (int k=0; k<y; k++) {
-				karte[i][k] = new Feld();
+				Feld f = new Feld();
+				
+				FeldTyp ftyp = new Wald();
+				ftyp.addModifikator("Bewegung", -5, -3);
+				ftyp.addModifikator("Verteidigung", 8, 10);
+				
+				f.setFeldTyp(ftyp);
+				
+				Monster m = new Ork("Wurgtz");
+				f.setMonster(m);
+							
+				
+				karte[i][k] = f;
+				
 			}
 		}
 		
