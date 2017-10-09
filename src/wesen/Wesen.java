@@ -67,5 +67,17 @@ public class Wesen {
 	public void setMag_Atk(int mag_Atk) {
 		this.magAtk = mag_Atk;
 	}
+	
+	public void schleichen() {
+		
+	}
+	
+	public int zaubern() {
+		return angriff;
+	}
+	
+	public int heilen() {
+		return lebenspunkte;
+	}
 
 }

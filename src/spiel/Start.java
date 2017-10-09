@@ -1,8 +1,8 @@
 package spiel;
-import java.nio.charset.CharsetEncoder;
-
 import spiel.ablauf.CharakterAuswahl;
+import spiel.ablauf.HauptMenue;
 import spiel.ablauf.Intro;
+import welt.Welt;
 
 /**
  * 
@@ -28,16 +28,18 @@ public class Start {
 		// OK! Es geht weiter zur Auswahl des Charakters
 		CharakterAuswahl.run();
 		
+		System.out.println("Charakterauswahl fertig.");
 		// Welt generieren
+		// ToDo:	Größe der Welt abfragen
+		Welt welt = new Welt(10,10);
 		
 		
-		// evtl. Monster generieren
 		
 		
 		// Haupt-Schleife des Spiels - der große Spielablauf
 		do {
 			// HauptMenü bearbeiten
-			// HauptMenue.run();
+			HauptMenue.run();
 			
 			// weitere Schritte ausführen ...
 			

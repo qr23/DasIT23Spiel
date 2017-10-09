@@ -1,11 +1,11 @@
 package io.dialog;
 
 import io.buttons.Button;
-import io.buttons.OkButton;
 import io.fenster.Fenster;
 
 public class Dialog {
-	
+
+
 	protected Fenster f;
 	
 	public Dialog() {
