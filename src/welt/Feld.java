@@ -1,5 +1,6 @@
 package welt;
 
+import gegenstand.Gegenstand;
 import gegenstand.Kraut;
 import welt.feldtyp.FeldTyp;
 import wesen.Monster;
@@ -9,6 +10,7 @@ public class Feld {
 	private Monster monster = null;
 	private FeldTyp feldTyp = null;
 	private Kraut kraut = null;
+	private Gegenstand gegenstand = null;
 	
 	public Feld() {
 	}
@@ -35,6 +37,14 @@ public class Feld {
 
 	public void setKraut(Kraut kraut) {
 		this.kraut = kraut;
+	}
+
+	public Gegenstand getGegenstand() {
+		return gegenstand;
+	}
+
+	public void setGegenstand(Gegenstand gegenstand) {
+		this.gegenstand = gegenstand;
 	}
 	
 	
