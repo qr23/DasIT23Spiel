@@ -9,10 +9,6 @@ public class WillkommenDialog extends Dialog {
 	
 	public WillkommenDialog() {
 		String titel = "Willkommen";
-		String inhalt = "Dies ist das Spiel der IT23. Ein kleines, "
-				+ "rundenbasiertes Spiel. Hier treten Ritter, Magier "
-				+ "und Elfen gegen Wölfe, Trolle und andere Unholde an."
-				+ "Möchtest Du dieses Spiel spielen?";
 		
 		// Ja und Nein Buttons zufügen 
 		Button ja = new JaButton();
@@ -21,7 +17,21 @@ public class WillkommenDialog extends Dialog {
 		this.addButton(nein);
 		
 		this.setTitel(titel);
-		this.setInhalt(inhalt);
+		this.addZeile("888888ba                       dP d888888P");
+		this.addZeile("88    `8b                      88    88");
+		this.addZeile("88     88 .d8888b. .d8888b.    88    88");
+		this.addZeile("88     88 88'  `88 Y8ooooo.    88    88");
+		this.addZeile("88    .8P 88.  .88       88    88    88");
+		this.addZeile("8888888P  `88888P8 `88888P'    dP    dP");
+		this.addZeile("                                       ");
+		this.addZeile("d8888b. d8888b.    .d88888b           oo          dP");
+		this.addZeile("    `88     `88    88.    \"'                      88");
+		this.addZeile(".aaadP'  aaad8'    `Y88888b. 88d888b. dP .d8888b. 88");
+		this.addZeile("88'         `88          `8b 88'  `88 88 88ooood8 88");
+		this.addZeile("88.         .88     d8'  .8P 88.  .88 88 88.  ... 88");
+		this.addZeile("Y88888P d88888P     Y88888P  88Y888P' dP `88888P' dP");
+		this.addZeile("                             88                     ");
+		this.addZeile("                             dp                     ");
 	}
 
 }
