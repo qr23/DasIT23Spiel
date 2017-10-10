@@ -29,7 +29,7 @@ public class Fenster {
     private String text = "";
     private ArrayList<String> zeilen;
         
-    private int breite = 61;
+    private int breite = 121;
     private Zeile line = new Zeile();
     
     private ArrayList<Button> buttons;
