@@ -42,15 +42,9 @@ public class CharakterAuswahlDialog extends Dialog{
 		b.setUnsichtbar();
 		this.addButton(b);
 		
-		b = new Button("Zurück", "Z");
-		b.setUnsichtbar();
-		this.addButton(b);
-				
-				
-		if(b.is("ZurückButton")) {
-			System.out.println("SHIIIIIIT!");
-            Intro.run();
-		}
+		ZurueckButton bz = new ZurueckButton();
+		bz.setUnsichtbar();
+		this.addButton(bz);
 		
 		this.setTitel(titel);
 	}

@@ -3,7 +3,7 @@ package io.buttons;
 public class ZurueckButton extends Button {
 	
 	public ZurueckButton() {
-		super("Zurück", "Zu");	
+		super("Zurück", "Z");	
 		this.setName("ZurückButton");
 	}
 

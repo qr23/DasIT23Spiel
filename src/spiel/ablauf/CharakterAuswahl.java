@@ -15,12 +15,15 @@ public class CharakterAuswahl {
 			// Welcher Charakter wird gewählt? 
 			CharakterAuswahlDialog charAusDialog = new CharakterAuswahlDialog();
 			charakter = charAusDialog.run();
-		
+			
 			String charakterKlasse = "";
 			if (charakter.is("Ritter")) {charakterKlasse = "einen Ritter";}
 			if (charakter.is("Magier")) {charakterKlasse = "einen Magier";}
 			if (charakter.is("Schurke")) {charakterKlasse = "einen Schurken";}
-		
+			if(charakter.is("ZurückButton")) {
+				System.out.println("Test11111111111111");
+				Intro.run();
+			}
 			String text = "Du hast Dir " + charakterKlasse + " ausgewählt. "
 						+ "Willst Du dabei bleiben?";
 			JaNeinDialog frage = new JaNeinDialog("Charakterwahl", text);
