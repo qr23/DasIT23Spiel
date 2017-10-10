@@ -8,13 +8,15 @@ import io.dialog.Dialog;
 public class WillkommenDialog extends Dialog {
 	
 	public WillkommenDialog() {
-		String titel = "Willkommen";
+		String titel = "Hauptmenu";
 		
 		// Ja und Nein Buttons zufügen 
-		Button ja = new JaButton();
-		Button nein = new NeinButton();
-		this.addButton(ja);
-		this.addButton(nein);
+		Button neu = new Button("Neues Spiel", "N");
+		Button menu = new Button("Menu", "M");
+		Button quit = new Button("Beenden", "Q");
+		this.addButton(neu);
+		this.addButton(menu);
+		this.addButton(quit);
 		
 		this.setTitel(titel);
 		this.addZeile("888888ba                       dP d888888P");
