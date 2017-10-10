@@ -8,8 +8,7 @@ import wesen.Wesen;
 public class KmapfTest {
 	
 	Wesen sieger;
-
-		
+	
 	public Wesen kaempfen(Wesen w1, Wesen w2) {
 		
 		while ((w1.getLebenspunkte() > 0) && (w2.getLebenspunkte()) > 0) {
