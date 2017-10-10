@@ -56,10 +56,10 @@ public class Welt {
 				// ToDo: nur mit gewisser Wahrscheinlichkeit 
 				//       ein Kraut dort anpflanzen
 				// ToDo: mehr als ein Kraut anpflanzen können
-				//Kraut kraut = new Alraune();
+				Kraut kraut = new Alraune();
 				
 				// Kraut auf das Feld pflanzen
-				//f.setKraut(kraut);
+				f.setKraut(kraut);
 				
 				
 				// Gegenstand zum Finden erschaffen

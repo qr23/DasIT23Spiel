@@ -29,11 +29,13 @@ public class HauptMenueDialog extends Dialog{
 		this.addButton(b);
 		
 		b = new Button("Wandern","W");
+		b.setName("Wandern");
 		b.setUnsichtbar();
 		this.addButton(b);
 		
 		b = new Button("Beenden","B");
 		b.setUnsichtbar();
+		b.setName("Beenden");
 		this.addButton(b);
 		
 		this.setTitel(titel);
