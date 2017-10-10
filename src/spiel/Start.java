@@ -34,8 +34,6 @@ public class Start {
 		Welt welt = new Welt(10,10);
 		
 		
-		
-		
 		// Haupt-Schleife des Spiels - der große Spielablauf
 		do {
 			// HauptMenü bearbeiten

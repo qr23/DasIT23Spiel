@@ -3,6 +3,7 @@ package io.fenster;
 import java.util.ArrayList;
 
 import io.buttons.Button;
+import io.konsole.Format;
 import io.konsole.Konsole;
 import io.konsole.Zeile;
 import io.tastatur.Tastatur;
@@ -102,6 +103,8 @@ public class Fenster {
     }
     
     public void zeigeCharakterLeiste() {
+    	int nullcount = 5;
+    	
 		if (!zeigeCharakterLeisteAn) { return; }
 		if ( charakter == null) {return; }
 		
@@ -115,10 +118,19 @@ public class Fenster {
 		int ep = charakter.getErfahrung();
 		int mp = charakter.getMagiepunkte();
 		
+		String lpS = Format.show(lp, nullcount);
+		String epS = Format.show(ep, nullcount);
+		String spS = Format.show(sp, nullcount);
+		String mpS = Format.show(mp, nullcount);
+		String lvS = Format.show(lv, nullcount);
+		
+		
 		//line.drawBoldMiddleLine();
-        line.drawLeftText(name+" ("+klasse+") - Level:" + 
-        					lv + " Erfahrung:" + ep);
-        line.drawLeftText("LP:" + lp + " SP:" + sp + " MP:" + mp);
+        line.drawLeftText(name+" ("+klasse+")");
+        line.drawLeftText("Level    :" + lvS );
+        line.drawLeftText("Erfahrung:" + epS);
+        line.drawMiddleLine();
+        line.drawLeftText("LP:" + lpS + " SP:" + spS + " MP:" + mpS);
         line.drawBoldMiddleLine();
 	}
     
