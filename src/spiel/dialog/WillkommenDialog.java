@@ -12,12 +12,12 @@ public class WillkommenDialog extends Dialog {
 		
 		Button neuButton = new Button("Neues Spiel", "N");
 		neuButton.setName("NeuButton");
-		Button menuButon = new Button("Menu", "M");
-		neuButton.setName("MenuButton");
+		Button menuButton = new Button("Menu", "M");
+		menuButton.setName("MenuButton");
 		Button quitButton = new Button("Beenden", "Q");
-		neuButton.setName("QuitButton");
+		quitButton.setName("QuitButton");
 		this.addButton(neuButton);
-		this.addButton(menuButon);
+		this.addButton(menuButton);
 		this.addButton(quitButton);
 		
 		this.setTitel(titel);
