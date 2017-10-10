@@ -6,6 +6,7 @@ import io.buttons.Button;
 import io.konsole.Konsole;
 import io.konsole.Zeile;
 import io.tastatur.Tastatur;
+import wesen.Charakter;
 
 /**
  *  Fenster f = new Fenster();
@@ -18,6 +19,9 @@ import io.tastatur.Tastatur;
  * 
  */
 public class Fenster {
+	
+	private Charakter charakter;
+	private boolean zeigeCharakterLeisteAn = true;
 	
 	private boolean zeigeStatus = true;
 	private String titel = "Kein Titel";
@@ -64,6 +68,7 @@ public class Fenster {
     
     public Button run(){
         
+    	Konsole.putzen();
         Button buttonPressed = null;
         boolean noButtonPressed = true;
         String eingabe = "";
@@ -80,9 +85,10 @@ public class Fenster {
         return buttonPressed;
     }
     
-    public void anzeigen(){
-        Konsole.putzen();
+    public void anzeigen(){        
         zeigeKleineTitelLeiste(titel);
+        zeigeCharakterLeiste();
+         
         
         if (text.isEmpty()) {
             //.... die einzelnen Zeilen auslesen und der Reihe nach darstellen ...
@@ -94,6 +100,39 @@ public class Fenster {
         zeigeStatusLeiste();       
         line.drawBottomLine();
     }
+    
+    public void zeigeCharakterLeiste() {
+		if (!zeigeCharakterLeisteAn) { return; }
+		if ( charakter == null) {return; }
+		
+		String name = charakter.getName();
+		String klasse = charakter.getClass().getName();
+		int pos = klasse.lastIndexOf(".")+1;
+		klasse = klasse.substring(pos, klasse.length());
+		int lp = charakter.getLebenspunkte();
+		int sp = charakter.getStaerke();
+		int lv = charakter.getLevel();
+		int ep = charakter.getErfahrung();
+		int mp = charakter.getMagiepunkte();
+		
+		//line.drawBoldMiddleLine();
+        line.drawLeftText(name+" ("+klasse+") - Level:" + 
+        					lv + " Erfahrung:" + ep);
+        line.drawLeftText("LP:" + lp + " SP:" + sp + " MP:" + mp);
+        line.drawBoldMiddleLine();
+	}
+    
+    public void setCharakter(Charakter charakter) {
+		this.charakter = charakter;
+	}
+	
+	public void setZeigeCharakterLeisteAn() {
+		this.zeigeCharakterLeisteAn = true;
+	}
+	
+	public void setZeigeCharakterLeisteNichtAn() {
+		this.zeigeCharakterLeisteAn = false;
+	}
     
     public void setZeigeStatusLeisteAn() {
     	this.zeigeStatus = true;

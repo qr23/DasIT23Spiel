@@ -2,6 +2,7 @@ package io.dialog;
 
 import io.buttons.Button;
 import io.fenster.Fenster;
+import wesen.Charakter;
 
 public class Dialog {
 
@@ -70,6 +71,14 @@ public class Dialog {
 	
 	public void zeigeStatusLeisteNichtAn() {
 		f.setZeigeStatusLeisteNichtAn();
+	}
+	
+	public void zeigeCharakterLeisteNichtAn() {
+		f.setZeigeStatusLeisteNichtAn();
+	}
+	
+	public void setCharakter(Charakter charakter) {
+		f.setCharakter(charakter);
 	}
 
 }
