@@ -26,7 +26,7 @@ public class Start {
 		}
 		
 		// OK! Es geht weiter zur Auswahl des Charakters
-		CharakterAuswahl.run();
+//		CharakterAuswahl.run();
 		
 		System.out.println("Charakterauswahl fertig.");
 		// Welt generieren
