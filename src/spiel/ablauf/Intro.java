@@ -14,8 +14,8 @@ public class Intro {
 		WillkommenDialog willkommenDialog = new WillkommenDialog();
 		Button antwort = willkommenDialog.run();
 				
-		// Wenn auf "Nein" geklickt wurde, beenden
-		if (antwort.is("NeinButton")) { Spiel.setStop(); }
+		// Wenn auf "Beenden" geklickt wurde, beenden
+		if (antwort.is("QuitButton")) { Spiel.setStop(); }
 				
 	}
 
