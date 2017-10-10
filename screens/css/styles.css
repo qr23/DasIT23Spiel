@@ -41,6 +41,21 @@ body{
     padding-bottom:2px;
 }
 
+.titlesp{
+    font-weight:bold;
+    font-size:16px;
+
+    display:block;
+    position:absolute;
+    top:0;
+    height:105px;
+    width:100%;
+    border-bottom:1px solid #fff;
+
+    padding-top:10px;
+    padding-bottom:2px;
+}
+
 .body{
     display:block;
     position:absolute;
@@ -48,8 +63,24 @@ body{
     padding:10px;
 }
 
+.bodysp{
+    display:block;
+    position:absolute;
+    top:120px;
+    padding:10px;
+}
+
 
 .body a {
+    background:#fff;
+    color:#444499;
+    padding:1px;
+    padding-top:2px;
+    margin-right:15px;
+    text-decoration:none;
+}
+
+.bodysp a {
     background:#fff;
     color:#444499;
     padding:1px;
