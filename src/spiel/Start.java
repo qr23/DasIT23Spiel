@@ -46,7 +46,7 @@ public class Start {
 			// weitere Schritte ausführen ...
 			
 			// Temp. zum Verhindern einer Endlos-Schleife
-			Spiel.setStop();
+			//Spiel.setStop();
 			
 		} while (Spiel.laeuft());
 		
