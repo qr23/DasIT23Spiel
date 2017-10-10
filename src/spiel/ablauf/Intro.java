@@ -16,6 +16,7 @@ public class Intro {
 				
 		// Wenn auf "Beenden" geklickt wurde, beenden
 		if (antwort.is("QuitButton")) { Spiel.setStop(); }
+		if (antwort.is("NeuButton")) { CharakterAuswahl.run(); }
 				
 	}
 

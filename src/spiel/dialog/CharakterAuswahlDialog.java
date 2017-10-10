@@ -3,11 +3,16 @@ package spiel.dialog;
 import io.buttons.Button;
 import io.buttons.JaButton;
 import io.buttons.NeinButton;
+import io.buttons.ZurueckButton;
 import io.dialog.Dialog;
+import io.konsole.Konsole;
+import spiel.Spiel;
+import spiel.ablauf.Intro;
 
 public class CharakterAuswahlDialog extends Dialog{
 
 	public CharakterAuswahlDialog() {
+		
 		String titel = "Auswahl des Charakters";
 		String zeile = "";
 		
@@ -17,13 +22,10 @@ public class CharakterAuswahlDialog extends Dialog{
 		zeile 	= "M) Magier (<Angaben der möglichen Charakterwerte>)";
 		this.addZeile(zeile);
 		
-		zeile 	= "E) Elf (<Angaben der möglichen Charakterwerte>)";
+		zeile 	= "S) Schurke (<Angaben der möglichen Charakterwerte>)";
 		this.addZeile(zeile);
 		
-		zeile 	= "F) Fee (<Angaben der möglichen Charakterwerte>)";
-		this.addZeile(zeile);
-		
-		zeile 	= "H) Hexe (<Angaben der möglichen Charakterwerte>)";
+		zeile = "Z) Zurück";
 		this.addZeile(zeile);
 		
 		// CharakterButtons erzeugen
@@ -36,23 +38,15 @@ public class CharakterAuswahlDialog extends Dialog{
 		b.setUnsichtbar();
 		this.addButton(b);
 		
-		b = new Button("Elf","E");
+		b = new Button("Schurke","S");
 		b.setUnsichtbar();
 		this.addButton(b);
 		
-		b = new Button("Fee","F");
-		b.setUnsichtbar();
-		this.addButton(b);
-		
-		
-		b = new Button("Hexe","H");
-		b.setUnsichtbar();
-		this.addButton(b);
-		
-		
+		ZurueckButton bz = new ZurueckButton();
+		bz.setUnsichtbar();
+		this.addButton(bz);
 		
 		this.setTitel(titel);
-
 	}
 
 }
