@@ -11,12 +11,12 @@ public class WillkommenDialog extends Dialog {
 		String titel = "Hauptmenu";
 		
 		// Ja und Nein Buttons zufügen 
-		Button neu = new Button("Neues Spiel", "N");
-		Button menu = new Button("Menu", "M");
-		Button quit = new Button("Beenden", "Q");
-		this.addButton(neu);
-		this.addButton(menu);
-		this.addButton(quit);
+		Button neuButton = new Button("Neues Spiel", "N");
+		Button menuButon = new Button("Menu", "M");
+		Button quitButton = new Button("Beenden", "Q");
+		this.addButton(neuButton);
+		this.addButton(menuButon);
+		this.addButton(quitButton);
 		
 		this.setTitel(titel);
 		this.addZeile("888888ba                       dP d888888P");
