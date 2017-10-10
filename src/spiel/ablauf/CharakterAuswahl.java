@@ -19,9 +19,7 @@ public class CharakterAuswahl {
 			String charakterKlasse = "";
 			if (charakter.is("Ritter")) {charakterKlasse = "einen Ritter";}
 			if (charakter.is("Magier")) {charakterKlasse = "einen Magier";}
-			if (charakter.is("Elf")) {charakterKlasse = "einen Elfen";}
-			if (charakter.is("Hexe")) {charakterKlasse = "eine Hexe";}
-			if (charakter.is("Fee")) {charakterKlasse = "eine Fee";}
+			if (charakter.is("Schurke")) {charakterKlasse = "einen Schurken";}
 		
 			String text = "Du hast Dir " + charakterKlasse + " ausgewählt. "
 						+ "Willst Du dabei bleiben?";
@@ -29,7 +27,6 @@ public class CharakterAuswahl {
 			antwort = frage.run();
 			
 		} while (antwort.is("NeinButton"));
-		
 		
 		
 		EingabeDialog einDialog = new EingabeDialog();
