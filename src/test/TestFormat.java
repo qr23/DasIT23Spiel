@@ -20,7 +20,10 @@ public class TestFormat {
 		System.out.println("Stärkepunkte 	: " + sp);
 		System.out.println("Magiepunkte  	: " + mp);
 		System.out.println("Erfahrungspunkte: " + ep);
-		System.out.println("Level 		 	: " + lv);
+		System.out.println("Level 		: " + lv);
+		
+		
+		
 		
 		/* Gewünschte Ausgabe
 		 * ==================
