@@ -9,34 +9,65 @@ import spiel.dialog.CharakterAuswahlDialog;
 public class CharakterAuswahl {
 	
 	public static void run() {
-		Button charakter;
-		Button antwort;
+		Button antwort1;
+		Button antwort2;
 
 		do {
 			// Welcher Charakter wird gewählt? 
+			// Erzeugen und starten des CharakterAuswahlDialogs
 			CharakterAuswahlDialog charAusDialog = new CharakterAuswahlDialog();
-			charakter = charAusDialog.run();
+			antwort1 = charAusDialog.run();
 			
-			String charakterKlasse = "";
-			if (charakter.is("Ritter")) {charakterKlasse = "einen Ritter";}
-			if (charakter.is("Magier")) {charakterKlasse = "einen Magier";}
-			if (charakter.is("Schurke")) {charakterKlasse = "einen Schurken";}
-			if (charakter.is("ZurückButton")) {Intro.run();}
+			// Hinweis
+			// -------
+			// im Button 'antwort1' befindet sich der 
+			// Button, auf den im Dialogfeld geklickt wurde.
+			// Der muss jetzt ausgewertet werden.
 			
-			String text = "Du hast Dir " + charakterKlasse + " ausgewählt. "
+			// bekommt einen individuellen InfoText zur Anzeige.
+			String infoText = "";
+			
+			// Je nach Auswahl des Charakters den InfoText setzen
+			if (antwort1.is("Ritter")) {infoText = "einen Ritter";}
+			if (antwort1.is("Magier")) {infoText = "einen Magier";}
+			if (antwort1.is("Schurke")) {infoText = "einen Schurken";}
+			
+			// Ist der ZurückButton gedrückt, Intro starten
+			if (antwort1.is("ZurückButton")) {Intro.run();}
+			
+			// AnzeigeText zusammen bauen.
+			String text = "Du hast Dir " + infoText + " ausgewählt. "
 						+ "Willst Du dabei bleiben?";
-			JaNeinDialog frage = new JaNeinDialog("Charakterwahl", text);
-			antwort = frage.run();
 			
-		} while (antwort.is("NeinButton"));
+			// JaNeinDialog erzeugen und starten.
+			JaNeinDialog frage = new JaNeinDialog("Charakterwahl", text);
+			antwort2 = frage.run();
+			
+			// Hinweis
+			// -------
+			// im Button 'antwort2' befindet sich der 
+			// Button, auf den im Dialogfeld geklickt wurde.
+			// Der muss jetzt ausgewertet werden.
+			// Hier als Bedingung in der While-Schleife.			
+			
+		} while (antwort2.is("NeinButton"));
 		
 		
+		// Einen EingabeDialog erzeugen ...
 		EingabeDialog einDialog = new EingabeDialog();
+		
+		// ... den Titel setzen ...
 		einDialog.setTitel("Name");
+		
+		// ... den Inhalt setzen ...
 		einDialog.setInhalt("Bitte den Namen für Deinen Charakter festlegen:");
+		
+		// ... und starten.
 		String name = einDialog.run();
 		
 		System.out.println("Name: " + name);
+		
+		
 		//ToDo: CharakterObjekt zurückgeben!
 	}
 

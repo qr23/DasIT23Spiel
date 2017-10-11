@@ -19,19 +19,11 @@ public class Start {
 		// Intro starten
 		Intro.run();
 		
-		// Falls das Spiel abgebrochen wurde, hier beenden
-		if (Spiel.isStoped()) {
-			System.out.println("... abgebrochen.");
-			return; 
-		}
 		
-		// OK! Es geht weiter zur Auswahl des Charakters
-//		CharakterAuswahl.run();
 		
-		System.out.println("Charakterauswahl fertig.");
 		// Welt generieren
-		// ToDo:	Größe der Welt abfragen
-		Welt welt = new Welt(10,10);
+		// ToDo: Größe der Welt abfragen
+		Spiel.kreiereWelt(20,10);
 		
 		
 		// Haupt-Schleife des Spiels - der große Spielablauf

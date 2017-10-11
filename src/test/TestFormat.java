@@ -1,5 +1,7 @@
 package test;
 
+import io.konsole.Format;
+
 public class TestFormat {
 
 	public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class TestFormat {
 		// Tu was Sinnvolles ...
 		// ...
 		// ...
-		
+				
 		
 		System.out.println("Lebenspunkte 	: " + lp);
 		System.out.println("Stärkepunkte 	: " + sp);
