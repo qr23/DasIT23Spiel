@@ -1,9 +1,11 @@
 package test;
 
+import spiel.Config;
+
 public class TestConfig {
 
 	public static void main(String[] args) {
-		String[] fileline = new String[10];
+		String[] fileline = new String[20];
 		
 		fileline[0] = 	"# Maximale Breite der Dialogfenster";		
 		fileline[1] = 	"MaxDialogBreite = 81";
@@ -22,13 +24,26 @@ public class TestConfig {
 		fileline[14] = 	"# 4: sehr schwer -> sehr viele Monster";
 		fileline[15] = 	"Schwierigkeit = 4";
 		
+		
+		Config config = new Config();
+		
+		config.setZeilen(fileline);
+		config.verarbeite();
+		
+		String wert = config.get("MaxDialogBreite");
+		
+		
+		System.out.println("Wert: " + wert);
+		
+		
+		
 		/* ZIEL
 		 * ======================
 		 * 
 		 * Config config = new Config();
 		 * ...
 		 * ...
-		 * int breite = config.get("MaxDialogBreite");
+		 * int breite = config.getInt("MaxDialogBreite");
 		 * int monsterZahl = config.get("MaxMonsterProfeld");
 		 * int schwierigkeit =  config.get("SchwierigkEit");
 		 * 
