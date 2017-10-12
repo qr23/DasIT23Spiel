@@ -8,13 +8,13 @@ public class TestConfig {
 		String[] fileline = new String[20];
 		
 		fileline[0] = 	"# Maximale Breite der Dialogfenster";		
-		fileline[1] = 	"MaxDialogBreite = 81";
+		fileline[1] = 	"MaxDialogBreite= 81";
 		fileline[2] = 	"";
 		fileline[3] = 	"# Maximale Zahl möglicher Monster pro Feld";
 		fileline[4] = 	"MaxMonsterProFeld = 1";
 		fileline[5] = 	"";
 		fileline[6] = 	"# Maximale Zahl möglicher Kräuter pro Feld";
-		fileline[7] = 	"MaxKraeuterProFeld = 1";
+		fileline[7] = 	"MaxKraeuterProFeld = 10";
 		fileline[8] = 	"";
 		fileline[9] = 	"# Schwierigkeit des Spiels";
 		fileline[10] = 	"# 0: ganz leicht -> kaum Monster";
@@ -30,10 +30,12 @@ public class TestConfig {
 		config.setZeilen(fileline);
 		config.verarbeite();
 		
-		String wert = config.get("MaxDialogBreite");
+		String breite = config.get("MaxDialogBreite");
+		String kraeuter = config.get("MaxKraeuterProFeld");
 		
 		
-		System.out.println("Wert: " + wert);
+		System.out.println("Breite  : " + breite);
+		System.out.println("Kräuter : " + kraeuter);
 		
 		
 		
